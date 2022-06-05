@@ -80,5 +80,12 @@ class RestaurantTest {
         List<Item>  menu = restaurant.getMenu();
         assertEquals(388,restaurant.getOrderCost(menu));
     }
+    
+    @Test
+    public void adding_extra_item_should_return_total_cost_of_selected_item(){
+    	restaurant.addToMenu("maggi",20);
+        List<Item>  menu = restaurant.getMenu();
+        assertEquals(408,restaurant.getOrderCost(menu));
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
