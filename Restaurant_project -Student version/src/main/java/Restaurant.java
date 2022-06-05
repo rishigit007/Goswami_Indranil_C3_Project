@@ -26,7 +26,7 @@ public class Restaurant {
 
     public List<Item> getMenu() {
         return null;
-        //DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
+        
     }
 
     private Item findItemByName(String itemName){
